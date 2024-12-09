@@ -52,10 +52,11 @@ dataset = load_data('cnn_dailymail', task_type='summarization')
 scem_score = evaluate_scem(dataset, task_type='summarization', num_samples=100, weights=weights['summarization'])
 print(f"SCEM Score for Summarization: {scem_score:.4f}")```
 
+
 4. Metrics: SCEM scores are compared with traditional metrics like BLEU, ROUGE, and METEOR for each task.
 
-Results
+## Results
 This project compares SCEM's performance with traditional metrics and highlights its strengths and weaknesses. Visualizations and statistical analysis are included to help understand SCEM's effectiveness in evaluating text generation tasks.
 
-Conclusion
+## Conclusion
 SCEM provides a comprehensive evaluation that combines multiple evaluation aspects (semantic similarity, compression ratio, factual accuracy, and coherence). It offers a more nuanced view of text generation tasks, making it a promising alternative to traditional metrics.

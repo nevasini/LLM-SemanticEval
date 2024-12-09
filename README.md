@@ -43,14 +43,14 @@ SCEM = \alpha \cdot \text{Cosine Similarity} + \beta \cdot (1 - \text{Compressio
 2. Load the Dataset: You can load datasets such as CNN/Daily Mail for summarization, SQuAD for question answering, and WMT for translation. Data will be preprocessed to ensure compatibility with SCEM.
 
 3. Run the SCEM Evaluation: The code provides functions to evaluate SCEM scores based on the four components for each task.
-
-
-```# Load dataset (Example: CNN/Daily Mail for Summarization)
-dataset = load_data('cnn_dailymail', task_type='summarization')
-
-# Evaluate SCEM for Summarization
-scem_score = evaluate_scem(dataset, task_type='summarization', num_samples=100, weights=weights['summarization'])
-print(f"SCEM Score for Summarization: {scem_score:.4f}")```
+   ```
+   # Load dataset (Example: CNN/Daily Mail for Summarization)
+   dataset = load_data('cnn_dailymail', task_type='summarization')
+   
+   # Evaluate SCEM for Summarization
+   scem_score = evaluate_scem(dataset, task_type='summarization', num_samples=100, weights=weights['summarization'])
+   print(f"SCEM Score for Summarization: {scem_score:.4f}")
+   ```
 
 
 4. Metrics: SCEM scores are compared with traditional metrics like BLEU, ROUGE, and METEOR for each task.
